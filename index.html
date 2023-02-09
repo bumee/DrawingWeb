@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class = "color-options">
+        <input type="color" id="color" />
+        <div class="color-option" style="background-color:aliceblue;" data-color="aliceblue"></div>
+        <div class="color-option" style="background-color:rgb(14, 124, 220);" data-color="rgb(14, 124, 220)"></div>
+        <div class="color-option" style="background-color:rgb(3, 20, 35);" data-color="rgb(3, 20, 35)"></div>
+        <div class="color-option" style="background-color:rgb(240, 255, 242);" data-color="rgb(240, 255, 242)"></div>
+    </div>
+    <canvas></canvas>
+    <div class="btns">
+        <input id="line-width" type="range" min="1" max="10" value="5"/>
+        <button id="mode-btn">Fill</button>
+        <button id="destroy-btn">Destory</button>
+        <button id="eraser-btn">Eraser</button>
+        <input type="file" accept="image/*" id="file" />
+        <input type="text" placeholder="Add the text" id="text" />
+        <button id="save">Save image</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
